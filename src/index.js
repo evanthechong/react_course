@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './app.css';
 import {App2} from"./App2"; //importing function from file
 
 const root = ReactDOM.createRoot(document.getElementById('root')); //setspath to render destination
