@@ -16,10 +16,12 @@ export const App2 = () => {
     }
     function handleSub(){
         setCount(a=>a-1)
+        setCount(a=>a-1)
+        setCount(a=>a-1)
         console.log(count)
     }
     function handleReset(){
-        setCount(a=0)
+        setCount(a=>a=0)
         console.log(count)
     }
 

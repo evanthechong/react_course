@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './app.css';
-import {App2} from"./App2"; //importing function from file
+import {App2} from"./App2";
+import {App3} from"./App3"; //importing function from file
 
 const root = ReactDOM.createRoot(document.getElementById('root')); //setspath to render destination
 
 root.render(
   <React.StrictMode>
     <App2/>
+    <App3/>
   </React.StrictMode>
 );
 
