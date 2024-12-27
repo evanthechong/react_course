@@ -2,14 +2,9 @@ import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { useState } from 'react';
 
-export const App3 = () => {
+export const App4 = () => {
     //States
-    const[tasks,setTasks] = useState([
-        {id:1234, name:"Record lecurees", completed:true},
-        {id:1235, name:"Record lecurees", completed:true},
-        {id:1236, name:"Record lecurees", completed:true}
-    ]);
-    const[show,setShow]=useState(true)
+    const[x,setX] = useState()
 
     //variables
     //functions

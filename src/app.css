@@ -9,3 +9,15 @@ h1{
     box-shadow: rgba(0,0,0,0/16) 0px 1px 4px;
     padding: 10px;
 }
+
+.App{
+    background-color: aqua;
+}
+
+.footer{
+    background-color: blueviolet;
+  }
+
+  .header{
+    background-color: bisque;
+  }
