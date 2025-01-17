@@ -19,5 +19,15 @@ h1{
   }
 
   .header{
-    background-color: bisque;
+    background-color: blueviolet;
   }
+
+.success{
+    background-color: green;
+}
+.warning{
+    background-color: orange;
+}
+.alert{
+    background-color: red;
+}

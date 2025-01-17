@@ -9,7 +9,6 @@ const root = ReactDOM.createRoot(document.getElementById('root')); //setspath to
 
 root.render(
   <React.StrictMode>
-    <App2/>
     <App3/>
   </React.StrictMode>
 );

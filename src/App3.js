@@ -1,44 +1,16 @@
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
-import { useState } from 'react';
+import { Tasklist } from './components/Tasklist';
 
+//simple task list 
 export const App3 = () => {
-    //States
-    const[tasks,setTasks] = useState([
-        {id:1234, name:"Record lecurees", completed:true},
-        {id:1235, name:"Record lecurees", completed:true},
-        {id:1236, name:"Record lecurees", completed:true}
-    ]);
-    const[show,setShow]=useState(true)
-
-    //variables
-    //functions
-    function handleDelete(id){
-        setTasks(tasks.filter(task=>id !== task.id))
-        console.log(id);
-    }
-    function handleToggle(){
-        setShow(!show)
-    }
-    //component return
+    const info="Random"
     return(
-        <>
-        <Header/>
         <div className='App'>
-            <h1>Task list</h1>
-            <ul>
-                <button className='' onClick={()=>setShow(!show)}>Toggle</button>
-                <button className='' onClick={handleToggle}>Toggle</button>
-                {show && tasks.map((task)=>(
-                    <li key={task.id} className={task.completed?"completed":"incomplete"}>
-                        <span>{task.id}-{task.name}</span>
-                        <button className='' onClick={()=>handleDelete(task.id)}>Delete</button>
-                    </li>
-                ))}
-            </ul>
-        </div>
-        <Footer/>
-        </>
+            <Header/>
+            <Tasklist info={info}/>
+            <Footer/>
+        </div>  
 );
 }
 
