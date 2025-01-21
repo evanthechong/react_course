@@ -3,12 +3,8 @@ import { TaskCard } from './TaskCard';
 import { useState } from 'react';
 import { BocCard } from './BocCard';
 
-export const Tasklist = ({info}) => {
-    const[tasks,setTasks] = useState([
-        {id:1111, name:"Record lectures", completed:true},
-        {id:1112, name:"Eat food", completed:true},
-        {id:1113, name:"Record lecurees", completed:true}
-    ]);
+export const Tasklist = ({tasks,setTasks}) => {
+    
     const[show,setShow]=useState(true)
 
     //variables
@@ -22,12 +18,12 @@ export const Tasklist = ({info}) => {
     }
 
   return (
-    <div>
+    <div className='tasklist'>
          <ul>
             <button className='' onClick={()=>setShow(!show)}>Toggle</button>
             <button className='' onClick={handleToggle}>Toggle</button>
             {show && tasks.map((task)=>( //conditional logic to show and hide tasks
-                <TaskCard key={task.id} info={info} task={task} handleDelete={handleDelete}/> //add dynamic values and functions as props
+                <TaskCard key={task.id} task={task} handleDelete={handleDelete}/> //add dynamic values and functions as props
             ))} 
         </ul>
 

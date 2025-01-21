@@ -12,15 +12,18 @@ h1{
 
 .App{
     background-color: aqua;
+    text-align: center;
+    padding: 0px 10px;
 }
 
 .footer{
-    background-color: blueviolet;
+    background-color: var(--theme-border);
   }
 
-  .header{
-    background-color: blueviolet;
-  }
+.header{
+background-color: var(--theme-border);
+padding:0px 0px 0px 0px
+}
 
 .success{
     background-color: green;
